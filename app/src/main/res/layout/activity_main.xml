@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3e6c6a"
+    tools:context=".MainActivity">
+
+ <ViewFlipper
+     android:id="@+id/flipper"
+     android:layout_width="404dp"
+     android:layout_height="304dp"
+     android:layout_gravity="center"
+     android:layout_margin="5dp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.444"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent">
+
+ </ViewFlipper>
+
+ <androidx.appcompat.widget.AppCompatButton
+     android:id="@+id/buttonone"
+     android:layout_width="163dp"
+     android:layout_height="57dp"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="16dp"
+     android:background="@drawable/roundercorners"
+     android:text="Let's Start"
+     android:textColor="@color/white"
+     android:textSize="18sp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/textView2"
+     app:layout_constraintVertical_bias="0.265" />
+
+ <TextView
+     android:id="@+id/textView2"
+     android:layout_width="374dp"
+     android:layout_height="129dp"
+     android:layout_marginTop="88dp"
+     android:text="Welcome to Driver Care app!!\n
+       Arrive alive, don't text and drive.Better Late than never!!"
+     android:textAlignment="center"
+     android:textColor="@color/black"
+     android:textSize="21sp"
+     android:textStyle="bold"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.567"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/flipper" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
